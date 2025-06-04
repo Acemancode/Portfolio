@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aceman- Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menuToggle" id="mobileMenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <aside class="sidebar">
+            <div class="profilesmall">
+                <img src="images/download (4).jpg" alt="Akachukwu Osuka">
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about me.html"><i class="fas fa-user"></i> About Me</a></li>
+                    <li><a href="images/Akachukwu Osuka.docx"><i class="fas fa-file-alt"></i> Resume</a></li>
+                    <li><a href="portfolio.html" class="active"><i class="fas fa-th-large"></i> Portfolio</a></li>
+                    </li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section id="portfolio-section" class="section">
+                <div class="header">
+                    <div class="profilelarge">
+                        <img src="images/download (5).jpg" alt="Akachukwu Osuka">
+                    </div>
+                    <div class="text">
+                        <h2>PORTFOLIO</h2>
+                        <p>My Latest Works</p>
+                    </div>
+                </div>
+                <div class="categories">
+                    <button class="category-button active" data-category="all">ALL</button>
+                    <button class="category-button" data-category="graphic-design">UIUX DESIGN</button>
+                    <button class="category-button" data-category="web-design">WEB DESIGN</button>
+                </div>
+                <div class="grid">
+                    <div class="item all graphic-design">
+                        <img src="images/Screenshot 2025-06-04 083021.png" alt="UIUX">
+                        <div class="overlay">
+                            <h4>figma Design</h4>
+                            <button class="btn view-figma-btn"
+                                data-figma-url="https://embed.figma.com/design/wHlkQKJVk0WF8dG1zL6U77/Untitled?node-id=0-1&embed-host=share">
+                                UI/UX
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item all web-design">
+                        <img src="images/Screenshot 2025-05-26 235925.png" alt="climate change awareness website">
+                        <div class="overlay">
+                            <h4>Web Design</h4>
+                            <a href="https://climate-change-website.vercel.app/index.html">
+                                <button class="btn view-figma-btn"
+                                    data-figma-url="https://embed.figma.com/design/wHlkQKJVk0WF8dG1zL6U77/Untitled?node-id=0-1&embed-host=share">
+                                    Web-design
+                                </button></a>
+
+                        </div>
+                    </div>
+                    <div class="item all graphic-design">
+                        <img src="images/Screenshot 2025-06-04 111718.png" alt="UIUX">
+                        <div class="overlay">
+                            <h4>figma Design</h4>
+                            <button class="btn view-figma-btn"
+                                data-figma-url="https://embed.figma.com/design/oweX16yOLY0x97rRFLtcvP/Untitled?node-id=0-1&embed-host=share">
+                                UI/UX
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item all graphic-design">
+                        <img src="images/Screenshot 2025-06-04 083933.png" alt="UIUX">
+                        <div class="overlay">
+                            <h4>figma Design</h4>
+                            <button class="btn view-figma-btn"
+                                data-figma-url="https://embed.figma.com/design/hGtfpZmzqT7XvZzoJl2JBM/Untitled?node-id=0-1&embed-host=share">
+                                UI/UX
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item all web-design">
+                        <img src="images/Screenshot 2025-06-04 110409.png" alt="climate change awareness website">
+                        <div class="overlay">
+                            <h4>Web Design</h4>
+                            <a href="https://sir-joseph-exam-main.vercel.app/">
+                                <button class="btn view-figma-btn">
+                                    Web-design
+                                </button></a>
+
+                        </div>
+                    </div>
+                    <div class="item all web-design">
+                        <img src="images/Screenshot 2025-06-04 111318.png" alt="climate change awareness website">
+                        <div class="overlay">
+                            <h4>Web Design</h4>
+                            <a href="https://tourism-six-eta.vercel.app/">
+                                <button class="btn view-figma-btn">
+                                    Web-design
+                                </button></a>
+
+                        </div>
+                    </div>
+
+                    <div id="fullscreen-overlay" class="hidden">
+                        <click id="close-fullscreen">X</click>
+                        <iframe id="fullscreen-figma-embed" src="" allowfullscreen></iframe>
+                    </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
